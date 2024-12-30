@@ -1,0 +1,61 @@
+/* PaymentPage.css */
+.payment-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(to bottom right, #f8f9fa, #e6f7ff); /* Gradient background */
+  font-family: 'Poppins', sans-serif; /* Modern font */
+  text-align: center;
+}
+
+.highlighted-text {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #ff4500; /* Vibrant orange for highlight */
+  margin-bottom: 20px;
+}
+
+.contact-info {
+  font-size: 1.5rem;
+  color: #333;
+  margin: 10px 0 30px;
+}
+
+.contact-info .phone-icon {
+  color: #ff4500; /* Match the highlighted text color */
+  margin-right: 8px;
+}
+
+.home-link {
+  padding: 12px 30px;
+  background-color: #007bff; /* Blue button */
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 1.3rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.home-link:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 768px) {
+  .highlighted-text {
+    font-size: 2rem;
+  }
+
+  .contact-info {
+    font-size: 1.2rem;
+  }
+
+  .home-link {
+    font-size: 1rem;
+    padding: 10px 20px;
+  }
+}

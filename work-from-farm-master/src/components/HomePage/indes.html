@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title>Responsive Menu with Three Dots</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <label for="responsive-button" class="responsive-button">&#x22EE;</label> <!-- Three dots symbol -->
+    <input type="checkbox" id="responsive-button" role="button">
+    
+    <nav class="menu">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Farms</a></li>
+        <li><a href="#">Partner Register</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+    </nav>   
+  </header>  
+  <style>/* General styles */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    
+    /* Responsive Menu */
+    .responsive-button {
+      font-size: 30px;
+      cursor: pointer;
+      display: inline-block;
+      padding: 10px;
+      margin: 10px;
+    }
+    
+    #responsive-button {
+      display: none;
+    }
+    
+    .menu {
+      display: none;
+    }
+    
+    .menu ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    
+    .menu li {
+      background-color: #333;
+      color: white;
+      padding: 15px;
+    }
+    
+    .menu li a {
+      text-decoration: none;
+      color: white;
+      display: block;
+    }
+    
+    #responsive-button:checked + .menu {
+      display: block;
+    }
+    
+    /* Menu Styling */
+    .menu ul {
+      position: absolute;
+      top: 50px;
+      right: 10px;
+      background-color: #333;
+      border-radius: 5px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    }
+    
+    .menu li {
+      margin: 5px 0;
+    }
+    
+    .menu li a:hover {
+      background-color: #555;
+    }
+    
+    /* Mobile responsiveness */
+    @media (max-width: 768px) {
+      .responsive-button {
+        display: inline-block;
+      }
+      
+      .menu {
+        position: absolute;
+        top: 50px;
+        right: 10px;
+        width: 200px;
+        background-color: #333;
+        border-radius: 5px;
+        display: none;
+      }
+    }
+    </style>
+</body>
+</html>

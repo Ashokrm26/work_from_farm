@@ -1,0 +1,297 @@
+/* General Styles */
+.farm-details {
+  padding: 30px;
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.farm-details h1 {
+  font-size: 2.2em;
+  color: #333;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.farm-details p {
+  font-size: 1.1em;
+  color: #555;
+  margin-bottom: 15px;
+  line-height: 1.5;
+}
+
+.farm-details .btn {
+  text-decoration: none;
+  border-radius: 5px;
+  padding: 12px 25px;
+  font-size: 1.1em;
+  display: inline-block;
+  cursor: pointer;
+  background-color: #3498db;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+.farm-details .btn:hover {
+  background-color: #2980b9;
+}
+
+/* Image Gallery */
+.farm-gallery {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.carousel {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  overflow-x: auto;
+  padding: 10px;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.farm-image {
+  width: 100%;
+  max-width: 400px; /* Reduced the image size */
+  height: 350px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 15px 0;
+  object-fit: cover; /* Ensures image covers the area properly */
+}
+
+/* Booking Button */
+.book-now-btn, .book-now-button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 14px 30px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.2em;
+  transition: background-color 0.3s ease;
+  margin-top: 20px;
+}
+
+.book-now-btn:hover, .book-now-button:hover {
+  background-color: #218838;
+}
+
+/* Available Dates */
+.available-dates {
+  margin-top: 30px;
+  text-align: left;
+  font-size: 1.1em;
+}
+
+.available-dates ul {
+  list-style-type: disc; /* Changed to 'disc' for bullet points */
+  padding-left: 20px; /* Indentation for bullets */
+}
+
+.available-dates li {
+  background-color: #f9f9f9;
+  padding: 10px;
+  margin: 8px 0;
+  border-radius: 8px;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.available-dates li.booked {
+  background-color: #dcdcdc;
+  color: #aaa;
+  text-decoration: line-through;
+}
+
+.available-dates li.selected {
+  background-color: #3498db;
+  color: white;
+}
+
+.available-dates li:hover {
+  background-color: #f1f1f1;
+}
+
+.available-dates li.selected:hover {
+  background-color: #2980b9;
+}
+
+/* Date Picker */
+.date-picker {
+  margin-top: 20px;
+  text-align: left;
+}
+
+.react-datepicker__day--highlighted {
+  background-color: #3498db !important;
+  color: white !important;
+}
+
+.react-datepicker__day--disabled {
+  background-color: #dcdcdc;
+  color: #aaa;
+}
+
+.react-datepicker__day--selected {
+  background-color: #2980b9 !important;
+  color: white !important;
+}
+
+/* Custom styles for booked dates */
+.react-datepicker__day--booked {
+  background-color: #dcdcdc !important;
+  color: #a9a9a9 !important;
+  pointer-events: none;
+}
+.facilities, .amenities {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.facility, .amenity {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 48%; /* Adjust this to fit based on your layout */
+  margin-bottom: 10px;
+}
+
+.facility i, .amenity i {
+  font-size: 1.5em;
+  color: #3498db; /* Icon color */
+}
+
+.facility p, .amenity p {
+  font-size: 1.1em;
+  color: #555;
+}
+
+.facility-icons, .amenity-icons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.facility:hover, .amenity:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.facility i:hover, .amenity i:hover {
+  color: #e74c3c; /* Change icon color on hover */
+}
+/* Booking Form Styles */
+.booking-form {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.booking-form h3 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.booking-form .form-group {
+  margin-bottom: 15px;
+}
+
+.booking-form .form-group label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.booking-form .form-group input,
+.booking-form .form-group select {
+  width: 100%;
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.booking-form .form-group input:focus,
+.booking-form .form-group select:focus {
+  border-color: #3399cc;
+  outline: none;
+}
+
+.booking-form .form-group input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.booking-form button {
+  width: 100%;
+  padding: 12px;
+  background-color: #3399cc;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.booking-form button:hover {
+  background-color: #267db3;
+}
+
+/* Payment Modal Styles */
+.payment-modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+}
+
+.payment-modal.open {
+  display: flex;
+}
+
+.payment-modal .modal-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 400px;
+}
+
+.payment-modal .modal-header {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.payment-modal .modal-body {
+  margin-bottom: 20px;
+}
+
+.payment-modal .modal-footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.payment-modal .close-btn {
+  background-color: #f1f1f1;
+  color: #333;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.payment-modal .close-btn:hover {
+  background-color: #e0e0e0;
+}

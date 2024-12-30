@@ -1,0 +1,54 @@
+.farm-detail-page {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .farm-gallery {
+    text-align: center;
+  }
+  
+  .carousel {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .farm-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  .farm-info {
+    font-family: Arial, sans-serif;
+  }
+  
+  .farm-info h3, .farm-info h4 {
+    margin: 10px 0;
+  }
+  
+  .farm-amenities, .farm-facilities {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .farm-amenities li, .farm-facilities li {
+    margin: 5px 0;
+  }
+  
+  .book-now-button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .book-now-button:hover {
+    background-color: #218838;
+  }
+  

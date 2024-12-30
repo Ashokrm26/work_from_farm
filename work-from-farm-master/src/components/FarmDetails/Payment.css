@@ -1,0 +1,75 @@
+.payment {
+    background-color: #f9f9f9;
+    padding: 40px 20px;
+    max-width: 600px;
+    margin: 0 auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .payment h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .payment p {
+    font-size: 16px;
+    color: #666;
+    margin: 10px 0;
+  }
+  
+  .payment p strong {
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .payment .total-price {
+    font-size: 20px;
+    color: #2c3e50;
+    margin: 20px 0;
+  }
+  
+  .payment button {
+    background-color: #3399cc;
+    color: white;
+    font-size: 18px;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .payment button:hover {
+    background-color: #287bb5;
+  }
+  
+  .payment button:active {
+    background-color: #1e6291;
+  }
+  
+  @media (max-width: 768px) {
+    .payment {
+      padding: 20px;
+    }
+  
+    .payment h2 {
+      font-size: 20px;
+    }
+  
+    .payment p {
+      font-size: 14px;
+    }
+  
+    .payment .total-price {
+      font-size: 18px;
+    }
+  
+    .payment button {
+      font-size: 16px;
+      padding: 10px 25px;
+    }
+  }
+  
